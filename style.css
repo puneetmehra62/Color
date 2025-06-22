@@ -1,0 +1,76 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gill Sans', 'Trebuchet MS', sans-serif;
+  background: repeating-linear-gradient(
+    45deg,
+    #f0f0f0,
+    #f0f0f0 20px,
+    #eaeaea 20px,
+    #eaeaea 40px
+  );
+  color: #222;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card {
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid #ccc;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+.happy {
+  border-left: 8px solid #f4c430;
+}
+
+.sad {
+  border-left: 8px solid #5c6bc0;
+}
+
+.calm {
+  border-left: 8px solid #81c784;
+}
